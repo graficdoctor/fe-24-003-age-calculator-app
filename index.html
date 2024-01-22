@@ -24,23 +24,35 @@
 			<div class="form-container">
 				<div class="form-input">
 					<label for="day">day</label>
-					<input type="text" name="day" id="day" placeholder="DD" />
+					<input type="text" name="day" id="day" placeholder="DD" required />
 					<p class="alert-text">Must be in the past</p>
 				</div>
 				<div class="form-input">
 					<label for="month">month</label>
-					<input type="text" name="month" id="month" placeholder="MM" />
+					<input
+						type="text"
+						name="month"
+						id="month"
+						placeholder="MM"
+						required
+					/>
 					<p class="alert-text">Must be in the past</p>
 				</div>
 				<div class="form-input">
 					<label for="year">year</label>
-					<input type="text" name="year" id="year" placeholder="YYYY" />
+					<input
+						type="text"
+						name="year"
+						id="year"
+						placeholder="YYYY"
+						required
+					/>
 					<p class="alert-text">Must be in the past</p>
 				</div>
 			</div>
 			<div class="split-element">
 				<div class="split-line"></div>
-				<div class="icon-arrow-bg">
+				<button class="icon-arrow-btn" id="calc-button">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="46"
@@ -53,7 +65,7 @@
 							/>
 						</g>
 					</svg>
-				</div>
+				</button>
 			</div>
 			<div class="calc-container">
 				<p class="calc-text">

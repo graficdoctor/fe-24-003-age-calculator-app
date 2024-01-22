@@ -75,8 +75,13 @@ body {
 	font-size: 1.25rem;
 }
 
+.form-input input:focus-within {
+	border-color: var(--clr-accent-400);
+	outline-offset: 0.25rem;
+}
+
 .form-input input::placeholder {
-	opacity: 1;
+	opacity: 0.5;
 	color: var(--clr-neutral-900);
 	font-size: 1.25rem;
 }
@@ -98,23 +103,31 @@ body {
 	background-color: var(--clr-neutral-500);
 }
 
-.icon-arrow-bg {
+.icon-arrow-btn {
+	cursor: pointer;
 	position: absolute;
 	top: -2rem;
 	right: 50%;
 	transform: translateX(50%);
 	background-color: var(--clr-accent-400);
 	border-radius: 100%;
+	border: transparent;
 	width: 4rem;
 	height: 4rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s ease;
 }
 
-.icon-arrow-bg svg {
+.icon-arrow-btn svg {
 	width: 1.5rem;
 	height: 1.5rem;
+}
+
+.icon-arrow-btn:hover,
+.icon-arrow-btn:focus-visible {
+	background-color: var(--clr-neutral-900);
 }
 
 .calc-container {
@@ -135,7 +148,7 @@ body {
 		padding: 3rem 2.5rem;
 	}
 
-	.icon-arrow-bg {
+	.icon-arrow-btn {
 		right: 0;
 		transform: unset;
 	}
@@ -170,6 +183,17 @@ body {
 
 	.form-input input::placeholder {
 		font-size: 2rem;
+	}
+
+	.icon-arrow-btn {
+		width: 6rem;
+		height: 6rem;
+		top: -3rem;
+	}
+
+	.icon-arrow-btn svg {
+		width: 2.75rem;
+		height: 2.75rem;
 	}
 
 	.calc-text {

@@ -21,11 +21,18 @@
 	</head>
 	<body>
 		<section class="wrapper">
-			<div class="form-container">
+			<form class="form-container" id="form-container">
 				<div class="form-input">
-					<label for="day">day</label>
-					<input type="text" name="day" id="day" placeholder="DD" required />
-					<p class="alert-text">Must be in the past</p>
+					<label for="day" class="">day</label>
+					<input
+						type="text"
+						name="day"
+						id="day"
+						placeholder="DD"
+						required
+						class=""
+					/>
+					<p class="alert-text"></p>
 				</div>
 				<div class="form-input">
 					<label for="month">month</label>
@@ -36,7 +43,7 @@
 						placeholder="MM"
 						required
 					/>
-					<p class="alert-text">Must be in the past</p>
+					<p class="alert-text"></p>
 				</div>
 				<div class="form-input">
 					<label for="year">year</label>
@@ -47,12 +54,12 @@
 						placeholder="YYYY"
 						required
 					/>
-					<p class="alert-text">Must be in the past</p>
+					<p class="alert-text"></p>
 				</div>
-			</div>
+			</form>
 			<div class="split-element">
 				<div class="split-line"></div>
-				<button class="icon-arrow-btn" id="calc-button">
+				<button class="icon-arrow-btn" id="calc-button" type="button">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="46"
@@ -69,13 +76,9 @@
 			</div>
 			<div class="calc-container">
 				<p class="calc-text">
-					<span class="clr-accent" id="calc-years">-- </span>years
-				</p>
-				<p class="calc-text">
-					<span class="clr-accent" id="calc-months">-- </span>months
-				</p>
-				<p class="calc-text">
-					<span class="clr-accent" id="calc-days">-- </span>days
+					<span class="clr-accent" id="calc-years">--</span> years<br />
+					<span class="clr-accent" id="calc-months">--</span> months<br />
+					<span class="clr-accent" id="calc-days">--</span> days
 				</p>
 			</div>
 		</section>

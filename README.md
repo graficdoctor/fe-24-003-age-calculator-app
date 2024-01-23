@@ -15,8 +15,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -38,18 +36,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/graficdoctor/fe-24-003-age-calculator-app)
+- Live Site URL: [Deployed on Netlify](https://cheerful-squirrel-f1af5a.netlify.app/)
 
 ## My process
 
@@ -62,6 +52,20 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 
 ### What I learned
+
+```html
+<input
+	onkeypress="return (event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57))"
+/>
+```
+
+- [How to make HTML input tag only accept numerical values?](https://stackoverflow.com/questions/13952686/how-to-make-html-input-tag-only-accept-numerical-values)
+- This code allows only numeric input (0-9) and allows the backspace key (charCode 8).
+
+Let's break down the condition:
+
+- `event.charCode != 8`: This part ensures that the backspace key is allowed (charCode 8).
+- `(event.charCode >= 48 && event.charCode <= 57)`: This part checks if the key pressed is a numeric key (0-9) based on ASCII values.
 
 ```js
 const yearsDifference = dateDifference.getFullYear() - 1970;
@@ -77,17 +81,11 @@ For example, if `getYear()` returns 122, it corresponds to the year 2022 (since 
 
 ### Continued development
 
-I'm not too comfortable working with Date in JavaScript. I definitely need to do more reading and more practice on this subject.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I'm not too comfortable working with Date in JavaScript. I definitely need to do more reading and more practice on this subject. Same goes for form validation. I still have trouble writing the JavaScript necessary.
+What I still need to implement here is: an alert-message only showing up underneath the input-box with the wrong value. _I'll get back to this later_
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Katrien Schuermans](https://www.katriens.be)
+- Frontend Mentor - [@graficdoctor](https://www.frontendmentor.io/profile/graficdoctor)
+- Twitter - [@graficdoctor](https://www.twitter.com/graficdoctor)

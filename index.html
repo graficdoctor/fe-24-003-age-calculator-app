@@ -30,7 +30,9 @@
 						id="day"
 						placeholder="DD"
 						required
-						class=""
+						onkeypress="return (event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57))"
+						maxlength="2"
+						min="0"
 					/>
 					<p class="alert-text"></p>
 				</div>
@@ -42,6 +44,9 @@
 						id="month"
 						placeholder="MM"
 						required
+						onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+						maxlength="2"
+						min="0"
 					/>
 					<p class="alert-text"></p>
 				</div>
@@ -53,6 +58,9 @@
 						id="year"
 						placeholder="YYYY"
 						required
+						onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+						maxlength="4"
+						min="4"
 					/>
 					<p class="alert-text"></p>
 				</div>

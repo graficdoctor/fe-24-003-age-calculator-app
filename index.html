@@ -20,7 +20,7 @@
 		<title>Frontend Mentor | Age calculator app</title>
 	</head>
 	<body>
-		<section class="wrapper">
+		<main class="wrapper">
 			<form class="form-container" id="form-container">
 				<div class="form-input">
 					<label for="day" class="">day</label>
@@ -32,7 +32,6 @@
 						required
 						onkeypress="return (event.charCode == 8 || (event.charCode >= 48 && event.charCode <= 57))"
 						maxlength="2"
-						min="0"
 					/>
 					<p class="alert-text"></p>
 				</div>
@@ -46,7 +45,6 @@
 						required
 						onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
 						maxlength="2"
-						min="0"
 					/>
 					<p class="alert-text"></p>
 				</div>
@@ -60,14 +58,18 @@
 						required
 						onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
 						maxlength="4"
-						min="4"
 					/>
 					<p class="alert-text"></p>
 				</div>
 			</form>
 			<div class="split-element">
 				<div class="split-line"></div>
-				<button class="icon-arrow-btn" id="calc-button" type="button">
+				<button
+					class="icon-arrow-btn"
+					id="calc-button"
+					type="button"
+					aria-label="Calculate age"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="46"
@@ -89,7 +91,7 @@
 					<span class="clr-accent" id="calc-days">--</span> days
 				</p>
 			</div>
-		</section>
+		</main>
 
 		<footer class="attribution">
 			Challenge by
